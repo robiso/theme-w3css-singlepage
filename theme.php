@@ -15,7 +15,7 @@ global $Wcms;
 
 		<link rel="stylesheet" href="https://cdn.graphenedeployment.nl/animate.css/3.7.2/animate.min.css">
 		<link rel="stylesheet" href="https://cdn.graphenedeployment.nl/w3css/4.13/w3.css">
-		<link rel="stylesheet" href="https://cdn.graphenedeployment.nl/fontawesome/5.11.2/fontawesome-pro-5.11.2-web/css/all.min.css">
+		<link rel="stylesheet" href="https://cdn.graphenedeployment.nl/fontawesome/5.12.0/fontawesome-pro-5.12.0-web/css/all.min.css">
 
 		<?php if($Wcms->loggedIn) { ?>
 			<link rel="stylesheet" href="<?= $Wcms->asset('assets/css/adminPanel.bootstrap.min.css') ?>" />
@@ -49,13 +49,16 @@ global $Wcms;
 				display: block;
 				margin: auto;
 			}
+			label { display: none; }
+			input, textarea { margin-bottom: 1em; }
+			form { text-align: right;}
 		</style>
 	</head>
 	<body class="w3-display-container">
         <?= $Wcms->alerts() ?>
         <?= $Wcms->settings() ?>
 
-		<main class="w3-display-middle w3-center" style="max-width:1500px; padding-bottom:128px; width:100%;">
+		<main class="w3-display-middle w3-center animated fadeIn" style="max-width:1500px; padding-bottom:128px; width:100%;">
 			<header class="w3-panel w3-opacity" style="padding:64px 16px">
 				<h1><?= $Wcms->page('title') ?></h1>
 				<h1 class="w3-large w3-wide" style="text-transform:uppercase"><?= $Wcms->page('description') ?></h1>
