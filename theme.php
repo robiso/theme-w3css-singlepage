@@ -13,17 +13,17 @@ global $Wcms;
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
-		<?= $Wcms->css() ?>
-		
+
 		<link rel="stylesheet" href="https://cdn.graphenedeployment.nl/animate.css/3.7.2/animate.min.css">
 		<link rel="stylesheet" href="https://cdn.graphenedeployment.nl/w3css/4.13/w3.css">
-		<link rel="stylesheet" href="https://cdn.graphenedeployment.nl/fontawesome/5.12.0/fontawesome-pro-5.12.0-web/css/all.min.css">
 
 		<?php if($Wcms->loggedIn) { ?>
 			<link rel="stylesheet" href="<?= $Wcms->asset('assets/css/adminPanel.bootstrap.min.css') ?>" />
 			<link rel="stylesheet" href="<?= $Wcms->asset('assets/css/node-editor.bootstrap.min.css') ?>" />
 			<link rel="stylesheet" href="<?= $Wcms->asset('assets/css/note-popover.bootstrap.min.css') ?>" />
 		<?php } ?>
+		<?= $Wcms->css() ?>
+		<link rel="stylesheet" href="https://cdn.graphenedeployment.nl/fontawesome/5.12.0/fontawesome-pro-5.12.0-web/css/all.min.css">
 
 		<style media="screen">
 			html, body {
