@@ -1,0 +1,13 @@
+{
+    "version": 1,
+    "themes": {
+        "theme-w3css-singlepage": {
+            "name": "Theme W3css Singlepage",
+            "repo": "https://github.com/robiso/theme-w3css-singlepage/tree/master",
+            "zip": "https://github.com/robiso/theme-w3css-singlepage/archive/master.zip",
+            "summary": "A w3css theme ported to WonderCMS.",
+            "version": "3.0.0",
+            "image": "https://raw.githubusercontent.com/robiso/theme-w3css-singlepage/master/preview.jpg"
+        }
+    }
+}
